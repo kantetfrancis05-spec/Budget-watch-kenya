@@ -19,9 +19,13 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
 
     Timer(const Duration(seconds: 3), () {
-      // TODO:
-      // Navigate to the Welcome Screen.
-    });
+      Navigator . push replacement ( context , MaterialPageRoute (builder: (context)=> const WelcomeScreen (), 
+),
+);
+});
+}                 
+
+     
   }
 
   @override
