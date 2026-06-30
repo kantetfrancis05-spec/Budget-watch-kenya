@@ -1,22 +1,26 @@
 import 'package:flutter/material.dart';
-import 'theme.dart';
+
 import 'routes.dart';
+import 'theme.dart';
 
 class BudgetWatchApp extends StatelessWidget {
-  const BudgetWatchApp({Key? key}) : super(key: key);
+  const BudgetWatchApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'BudgetWatch Kenya',
+
+      debugShowCheckedModeBanner: false,
+
       theme: AppTheme.lightTheme,
+
       darkTheme: AppTheme.darkTheme,
+
       themeMode: ThemeMode.system,
-      home: const Scaffold(
-        body: Center(
-          child: Text('Welcome to BudgetWatch Kenya'),
-        ),
-      ),
+
+      initialRoute: AppRoutes.splash,
+
       routes: AppRoutes.routes,
     );
   }
