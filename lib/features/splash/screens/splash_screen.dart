@@ -20,7 +20,9 @@ class _SplashScreenState extends State<SplashScreen> {
 
     Timer(const Duration(seconds: 3), () {
       Navigator . push replacement ( context , MaterialPageRoute (builder: (context)=> const WelcomeScreen (),
-), ); });                                                
+), 
+); 
+});                                                
 
      
   }
